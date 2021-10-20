@@ -1,0 +1,79 @@
+:root {
+    background-color: #ecf5ff;  
+    font-size: 62.5%;                                               /*default font size set here*/
+}
+
+*{
+    box-sizing: border-box;                                         /*Box sizing will include the size of the borders*/
+    font-family: Arial, Helvetica, sans-serif;                      /*Setting the font that will be used*/
+    margin: 0;
+    padding: 0;
+    color: #333;                                                    /*Defaul text colour*/ 
+}
+
+h1,
+h2,
+h3,
+h4{
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 5.4 rem;
+    color: #56a5eb;
+    margin-bottom: 5 rem;                                           /*rem is relative to default font size*/
+}
+
+h1>span{
+    font-size: 2.4 rem;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 4.2 rem;
+    margin-bottom: 4 rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.8 rem;
+    font-weight: 500;
+}
+
+/*Utilities*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;                                                  /*Flex used for centering containers, allows for greater control*/ 
+    justify-content: center;                                        /*Align Horisontally*/
+    align-items: center;                                            /*Align Verticaly*/
+    max-width: 80rem;                                               /*limits the size of the container*/
+    margin: 0 auto;                                                     /*Ensure that container is always centered*/
+}
+
+.container>*{                                                       /*Any child of container has properties:*/
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;                                                  /*Create Flexbox*/
+    flex-direction: column;                                         /*Make it vertical to represent a column*/
+}
+
+.flex-center {                                                      /*Will Justify and align content*/
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {                                                   /*Will justify*/
+    justify-content: center;
+}
+
+.text-center {                                                      /*Will align text*/
+    text-align: center;
+}
+
+.hidden {                                                           /*Used to hide content*/
+    display: none;
+}
