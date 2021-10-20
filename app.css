@@ -19,19 +19,19 @@ h4{
 }
 
 h1{
-    font-size: 5.4 rem;
+    font-size: 5.4rem;
     color: #56a5eb;
-    margin-bottom: 5 rem;                                           /*rem is relative to default font size*/
+    margin-bottom: 5rem;                                           /*rem is relative to default font size*/
 }
 
 h1>span{
-    font-size: 2.4 rem;
+    font-size: 2.4rem;
     font-weight: 500;
 }
 
 h2{
-    font-size: 4.2 rem;
-    margin-bottom: 4 rem;
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
     font-weight: 700;
 }
 
@@ -76,4 +76,31 @@ h3{
 
 .hidden {                                                           /*Used to hide content*/
     display: none;
+}
+
+/*Buttons*/
+        /*Button basic state*/
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+        /*Button Hover State*/
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86,185,235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
 }
